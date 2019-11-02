@@ -12,6 +12,8 @@ class Pod
         std::string getName();
         double getMaxSpeed();
         void decreaseSpeedBy10();
+        void increaseSpeedBy10();
+
     private:
         std::string name_;
         double max_speed_;

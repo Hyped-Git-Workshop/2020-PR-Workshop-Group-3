@@ -32,6 +32,11 @@ void Pod::decreaseSpeedBy10()
   setMaxSpeed(getMaxSpeed()-10);
 }
 
+void Pod::increaseSpeedBy10()
+{
+    max_speed_ += 10;
+}
+
 int main(int argc, char* argv[])
 {
     Pod my_pod {};
@@ -47,5 +52,8 @@ int main(int argc, char* argv[])
     my_pod.setMaxSpeed(speed);
 
     std::cout << "Pod name: " << my_pod.getName() << "\n";
+    std::cout << "Pod max speed: " << my_pod.getMaxSpeed() << "\n";
+
+    my_pod.increaseSpeedBy10();
     std::cout << "Pod max speed: " << my_pod.getMaxSpeed() << "\n";
 }
