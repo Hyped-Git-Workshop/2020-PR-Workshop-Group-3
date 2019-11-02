@@ -27,6 +27,10 @@ double Pod::getMaxSpeed()
 {
     return max_speed_;
 }
+void Pod::decreaseSpeedBy10()
+{
+  setMaxSpeed(getMaxSpeed()-10);
+}
 
 int main(int argc, char* argv[])
 {
